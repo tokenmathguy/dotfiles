@@ -1,0 +1,12 @@
+#!/usr/bin/python
+import sys
+import re
+
+ANY_URL_REGEX = r"""http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"""
+
+
+for line in sys.stdin:
+    urls = re.findall(ANY_URL_REGEX, line)
+    for url in urls:
+        if "ForcedConflictResolve" not in url:
+            sys.stdout.write("{}\n".format(url))

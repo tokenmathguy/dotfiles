@@ -1,0 +1,10 @@
+[directory]
+truncation_length = 4
+truncate_to_repo = false
+style = "75"
+
+[git_branch]
+style = "2"
+
+[python]
+style = "bold 56"
