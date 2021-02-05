@@ -3,6 +3,8 @@ wmname LG3D
 
 xmodmap ${HOME}/.Xmodmap
 
+setxkbmap -layout us -option compose:ralt
+
 xsetroot -solid black
 
 autocutsel -selection PRIMARY -fork
