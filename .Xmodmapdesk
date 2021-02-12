@@ -3,9 +3,9 @@ clear Control
 clear Mod1
 clear Mod4
 keycode 64 = Super_L
-keycode 108 = Multi_key
-keycode 105 = Control_R
 keycode 66 = Alt_L
+keycode 105 = Control_R
+keycode 108 = Multi_key
 add Control = Control_L
 add Control = Control_R
 add Mod1 = Alt_L
